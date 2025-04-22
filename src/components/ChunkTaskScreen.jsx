@@ -14,7 +14,7 @@ export default function ChunkTaskScreen({
   setStep3
 }) {
   const handleNext = () => {
-    setCurrentScreen('pomodoro');
+    setCurrentScreen('notes');
   };
 
   return (
@@ -119,7 +119,7 @@ export default function ChunkTaskScreen({
             } rounded-lg text-xl font-medium btn-hover-effect transition-all duration-300`}
           >
             <span className={`${darkMode ? 'text-glow-white text-white' : 'text-glow-black text-black'}`}>
-              Start Working
+              Next
             </span>
           </button>
         </div>

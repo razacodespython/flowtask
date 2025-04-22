@@ -6,6 +6,7 @@ import TaskInputScreen from '@/components/TaskInputScreen';
 import BreatheScreen from '@/components/BreatheScreen';
 import DefineTaskScreen from '@/components/DefineTaskScreen';
 import ChunkTaskScreen from '@/components/ChunkTaskScreen';
+import TransitionScreen from '@/components/TransitionScreen';
 import PomodoroScreen from '@/components/PomodoroScreen';
 import CompletionScreen from '@/components/CompletionScreen';
 import GoogleAuth from '@/components/GoogleAuth';
@@ -118,8 +119,8 @@ export default function Home() {
           isLoggedIn={isLoggedIn}
           setIsLoggedIn={setIsLoggedIn}
         />;
-      // case 'breathe':
-      //   return <BreatheScreen {...props} />;
+      case 'breathe':
+        return <BreatheScreen {...props} />;
       case 'defineTask':
         return <DefineTaskScreen 
           {...props} 
@@ -130,6 +131,8 @@ export default function Home() {
         />;
       case 'chunkTask':
         return <ChunkTaskScreen {...props} />;
+      case 'transition':
+        return <TransitionScreen {...props} />;
       case 'pomodoro':
         return <PomodoroScreen {...props} />;
       case 'completion':

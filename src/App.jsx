@@ -4,6 +4,7 @@ import TaskInputScreen from './components/TaskInputScreen';
 import BreatheScreen from './components/BreatheScreen';
 import DefineTaskScreen from './components/DefineTaskScreen';
 import ChunkTaskScreen from './components/ChunkTaskScreen';
+import NotesScreen from './components/NotesScreen';
 import PomodoroScreen from './components/PomodoroScreen';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   const [step1, setStep1] = useState('');
   const [step2, setStep2] = useState('');
   const [step3, setStep3] = useState('');
+  const [notes, setNotes] = useState('');
 
   return (
     <div className={`min-h-screen ${darkMode ? 'bg-black' : 'bg-white'} transition-colors duration-300`}>
@@ -64,6 +66,15 @@ function App() {
           setStep3={setStep3}
         />
       )}
+      {currentScreen === 'notes' && (
+        <NotesScreen 
+          setCurrentScreen={setCurrentScreen} 
+          darkMode={darkMode} 
+          setDarkMode={setDarkMode}
+          notes={notes}
+          setNotes={setNotes}
+        />
+      )}
       {currentScreen === 'pomodoro' && (
         <PomodoroScreen 
           setCurrentScreen={setCurrentScreen} 
@@ -82,4 +93,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
