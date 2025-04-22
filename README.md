@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FlowTask
+
+A focused task management application that helps you break down and complete tasks with a calming, distraction-free interface.
+
+## Features
+
+- **Task Management**
+  - Create tasks manually or import from Google Calendar
+  - Break down tasks into manageable steps
+  - Define success criteria for each task
+
+- **Focus Mode**
+  - Pomodoro timer for focused work sessions
+  - Calming breathing exercises
+  - Fullscreen mode for distraction-free work
+
+- **User Experience**
+  - Dark/Light mode support
+  - Smooth animations and transitions
+  - Clean, minimalist interface
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/razacodespython/flowtask.git
+cd flowtask
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Welcome Screen**
+   - Sign in with Google to access calendar integration
+   - Choose between manual task creation or calendar import
 
-## Learn More
+2. **Task Input**
+   - Enter task details manually
+   - Or select from your Google Calendar events
 
-To learn more about Next.js, take a look at the following resources:
+3. **Define Task**
+   - Set a clear task description
+   - Define success criteria
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Break Down Task**
+   - Divide your task into three manageable steps
+   - Focus on one step at a time
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. **Pomodoro Timer**
+   - Work in focused 25-minute sessions
+   - Take 5-minute breaks between sessions
+   - Use breathing exercises during breaks
 
-## Deploy on Vercel
+## Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Frontend**
+  - React
+  - Next.js
+  - Tailwind CSS
+  - Google Calendar API
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Authentication**
+  - Google OAuth
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Inspired by the Pomodoro Technique
+- Built with a focus on mindfulness and productivity
